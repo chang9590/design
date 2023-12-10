@@ -1,0 +1,131 @@
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="flex">
+        <!-- Sidebar -->
+        <div class="w-64 h-screen bg-white shadow-md">
+            <div class="flex flex-col p-4">
+                <div class="flex items-center mb-6">
+                    <i class="fas fa-bars mr-2 text-gray-600"></i>
+                    <span class="font-semibold text-gray-900 text-lg">Jobis 관리하기</span>
+                </div>
+                <nav class="flex flex-col">
+                    <a href="#" class="flex items-center py-2 px-4 text-gray-700 hover:bg-gray-200 rounded-md mb-2">
+                        <i class="fas fa-home mr-3"></i> 대시보드
+                    </a>
+                    <a href="#" class="flex items-center py-2 px-4 text-gray-700 hover:bg-gray-200 rounded-md mb-2">
+                        <i class="fas fa-file-alt mr-3"></i> 거래내역
+                    </a>
+                    <a href="#" class="flex items-center py-2 px-4 text-gray-700 hover:bg-gray-200 rounded-md mb-2">
+                        <i class="fas fa-chart-bar mr-3"></i> 리포트
+                    </a>
+                    <a href="#" class="flex items-center py-2 px-4 text-gray-700 hover:bg-gray-200 rounded-md mb-2">
+                        <i class="fas fa-user mr-3"></i> 고객정보
+                    </a>
+                    <a href="#" class="flex items-center py-2 px-4 text-gray-700 hover:bg-gray-200 rounded-md mb-2">
+                        <i class="fas fa-box mr-3"></i> 물품
+                    </a>
+                    <a href="#" class="flex items-center py-2 px-4 text-gray-700 hover:bg-gray-200 rounded-md mb-2">
+                        <i class="fas fa-shopping-cart mr-3"></i> 판매
+                    </a>
+                    <a href="#" class="flex items-center py-2 px-4 text-gray-700 hover:bg-gray-200 rounded-md mb-2">
+                        <i class="fas fa-cog mr-3"></i> 설정
+                    </a>
+                    <a href="#" class="flex items-center py-2 px-4 text-gray-700 hover:bg-gray-200 rounded-md mb-2">
+                        <i class="fas fa-question-circle mr-3"></i> 고객지원/문의하기
+                    </a>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Main content -->
+        <div class="flex-1 p-8">
+            <div class="text-2xl font-bold mb-6">리포트</div>
+
+            <!-- Cards -->
+            <div class="grid grid-cols-3 gap-4 mb-8">
+                <!-- Card 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center space-x-4 mb-4">
+                        <div class="p-3 bg-blue-100 rounded-full">
+                            <i class="fas fa-wallet text-blue-500 text-xl"></i>
+                        </div>
+                        <div class="text-lg font-semibold">현금 충전</div>
+                    </div>
+                    <div class="text-sm">모든 직원의 충전 금액을 동일하게 설정한 보유액을 확인할 수 있습니다.</div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center space-x-4 mb-4">
+                        <div class="p-3 bg-gray-100 rounded-full">
+                            <i class="fas fa-credit-card text-gray-500 text-xl"></i>
+                        </div>
+                        <div class="text-lg font-semibold">비용 충전</div>
+                    </div>
+                    <div class="text-sm">직원 별로 남은, 지출되지 않은 비용금액 기준으로 집계된 충전액을 확인할 수 있습니다.</div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center space-x-4 mb-4">
+                        <div class="p-3 bg-blue-100 rounded-full">
+                            <i class="fas fa-chart-bar text-blue-500 text-xl"></i>
+                        </div>
+                        <div class="text-lg font-semibold">수익 충전</div>
+                    </div>
+                    <div class="text-sm">수익은 어떻게 계산되었을까요? 지급된 예산들로 얼마나 많은 수익을 창출할 수 있었는지.</div>
+                </div>
+            </div>
+
+            <!-- More Cards -->
+            <div class="grid grid-cols-3 gap-4">
+                <!-- Card 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center space-x-4 mb-4">
+                        <div class="p-3 bg-yellow-100 rounded-full">
+                            <i class="fas fa-coins text-yellow-500 text-xl"></i>
+                        </div>
+                        <div class="text-lg font-semibold">미수금 / 미지급금</div>
+                    </div>
+                    <div class="text-sm">체납 부가세 또는 더욱 증액된 거래처별로 남겨진 미지급금입니다.</div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center space-x-4 mb-4">
+                        <div class="p-3 bg-green-100 rounded-full">
+                            <i class="fas fa-chart-pie text-green-500 text-xl"></i>
+                        </div>
+                        <div class="text-lg font-semibold">외상 매입</div>
+                    </div>
+                    <div class="text-sm">어떤 물품이 많이 남아 있거나 잘 팔리지 않는지 확인할 수 있습니다.</div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center space-x-4 mb-4">
+                        <div class="p-3 bg-red-100 rounded-full">
+                            <i class="fas fa-pencil-alt text-red-500 text-xl"></i>
+                        </div>
+                        <div class="text-lg font-semibold">부가세 리포트</div>
+                    </div>
+                    <div class="text-sm">부가세 리포트를 통해 기초자산 매입/판매와 연관된 부가세를 확인할 수 있습니다.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
